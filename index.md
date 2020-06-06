@@ -16,6 +16,8 @@ The Masters Advisory Committee of CMU SCS.
 
 - [Romel Baral](mailto:rbaral@andrew.cmu.edu) (MSCB)
 - [Anant Kaushik](mailto:anantk@andrew.cmu.edu) (MSE-SS)
+- [Noelle Toong](mailto:ntoong@andrew.cmu.edu) (MSAS)
 - [Kiran Prasad](mailto:Kiranpra@cs.cmu.edu) (MSAII)
+- [Danny Vedova](mailto:dkv@cs.cmu.edu) (MSR)
 - [Neil Xu](mailto:ziyux@cs.cmu.edu) (MSML)
 - [Lijun Yu](mailto:lijun@cmu.edu) (MLT)
