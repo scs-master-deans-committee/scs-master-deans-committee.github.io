@@ -14,4 +14,8 @@ The Masters Advisory Committee of CMU SCS.
 
 # Committee Members
 
-- ...
+- [Romel Baral](mailto:rbaral@andrew.cmu.edu) (MSCB)
+- [Anant Kaushik](mailto:anantk@andrew.cmu.edu) (MSE-SS)
+- [Kiran Prasad](mailto:Kiranpra@cs.cmu.edu) (MSAII)
+- [Neil Xu](mailto:ziyux@cs.cmu.edu) (MSML)
+- [Lijun Yu](mailto:lijun@cmu.edu) (MLT)
