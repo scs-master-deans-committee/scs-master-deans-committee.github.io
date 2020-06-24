@@ -15,10 +15,10 @@ The Masters Advisory Committee of CMU SCS.
 
 # Committee Members
 
-- [Romel Baral](mailto:rbaral@andrew.cmu.edu): Member (MSCB)
-- [Anant Kaushik](mailto:anantk@andrew.cmu.edu): Member (MSE-SS)
-- [Noelle Toong](mailto:ntoong@andrew.cmu.edu): Member (MSAS)
-- [Kiran Prasad](mailto:Kiranpra@cs.cmu.edu): Liason (MSAII)
-- [Danny Vedova](mailto:dkv@cs.cmu.edu): Ad Hoc Committee Manager (MSR)
-- [Neil Xu](mailto:ziyux@cs.cmu.edu): Member (MSML)
-- [Lijun Yu](mailto:lijun@cmu.edu): Secretary (MLT)
+- [Romel Baral](mailto:rbaral@andrew.cmu.edu): Member (CB: MSCB)
+- [Anant Kaushik](mailto:anantk@andrew.cmu.edu): Member (ISR: MSE-SS)
+- [Noelle Toong](mailto:ntoong@andrew.cmu.edu): Member (CB: MSAS)
+- [Kiran Prasad](mailto:Kiranpra@cs.cmu.edu): Liason (LTI: MSAII)
+- [Danny Vedova](mailto:dkv@cs.cmu.edu): Ad Hoc Committee Manager (RI: MSR)
+- [Neil Xu](mailto:ziyux@cs.cmu.edu): Member (MLD: MSML)
+- [Lijun Yu](mailto:lijun@cmu.edu): Secretary (LTI: MLT)
