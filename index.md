@@ -10,7 +10,9 @@ The Masters Advisory Committee of CMU SCS.
 
 # Meeting Minutes
 
-- [Meetings with the Dean]() (Coming soon)<!-- (https://docs.google.com/document/d/1HrF6Vp6lqhX1z2XVm0LV9WK1vvvAr39ZTvw5anVLQk4/edit?usp=sharing) -->
+- Meetings with Dean
+  - [06/23/20-06/24/20](https://docs.google.com/document/d/1aQXEO_R23Xyyz7ZFbizjqsrYHH9-G99VY_ZPkjUjRg4/edit?usp=sharing)
+  - [05/04/20](https://docs.google.com/document/d/1HYidKd_7kmm5p6RGjOQdQcQxkom9RSS_VQf5RhIIitk/edit?usp=sharing)
 - [Internal meetings](https://docs.google.com/document/d/18PhmjxNDKJgKPlzbz5_XSs_-ek3sIFlBxSYlcWd8AQA/edit?usp=sharing)
 
 # Committee Members
