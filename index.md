@@ -1,6 +1,4 @@
-Reach us with the following issue form or via [masters-advisory-committee@cs.cmu.edu](mailto:masters-advisory-committee@cs.cmu.edu).
-
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScnGy_3KwyuP2UB4GfG7pYlTV9XG-MIF4GeAKfihCbUVn91Rg/viewform?embedded=true" width="640" height="661" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+Reach us with the [issue form](https://forms.gle/MLm52wrxSrodxrp86) or at [masters-advisory-committee@cs.cmu.edu](mailto:masters-advisory-committee@cs.cmu.edu).
 
 # Overview
 
