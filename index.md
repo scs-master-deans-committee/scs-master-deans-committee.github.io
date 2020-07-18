@@ -2,7 +2,11 @@ Reach us with the [issue form](https://forms.gle/MLm52wrxSrodxrp86) or at [maste
 
 # Overview
 
-The Masters Advisory Committee of CMU SCS.
+The Master's Advisory Committee to the Dean of SCS serves to better student life for master's students in the school of computer science by providing feedback to the Dean and spearheading initiatives in the following areas:
+
+1. Culture and Atmosphere
+2. Academics, Resources, and Interdepartment Communication
+3. Personal Wellness and Mental Health
 
 # Documents
 
