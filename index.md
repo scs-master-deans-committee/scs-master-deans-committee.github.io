@@ -13,7 +13,8 @@ The Master's Advisory Committee to the Dean of SCS serves to better student life
 - [Constitution of the Masters Advisory Committee of CMU SCS](https://docs.google.com/document/d/1K1REzlV8vpmC4ftiYSbMTuRveg5hbYkmnj1NtgFBFJ0/edit?usp=sharing) (Draft version)
 
 # Meeting Minutes
-
+- Meeting with the CPDC concerning TOC
+  - [07/01/2020](https://docs.google.com/document/d/1GZa7QueTGirV4HHYVcgtCNbsJ71xyBYKxknbMPAg_K8/edit?usp=sharing)
 - Meetings with Dean
   - [06/23/20-06/24/20](https://docs.google.com/document/d/1aQXEO_R23Xyyz7ZFbizjqsrYHH9-G99VY_ZPkjUjRg4/edit?usp=sharing)
   - [05/04/20](https://docs.google.com/document/d/1HYidKd_7kmm5p6RGjOQdQcQxkom9RSS_VQf5RhIIitk/edit?usp=sharing)
