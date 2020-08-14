@@ -111,7 +111,6 @@ section {
 
 .section-title {
   padding-top: 30px;
-  padding-bottom: 30px;
   font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
@@ -129,6 +128,7 @@ section {
 
 .horizontal-scrollable {
   height: 100%;
+  padding-top: 30px;
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
@@ -152,6 +152,7 @@ section {
   height: 100%;
   font-weight: 300;
   text-align: center;
+  transition: transform 0.2s;
 }
 
 .calender-date-item:first-child {
@@ -159,8 +160,11 @@ section {
 }
 
 .calender-date-item:hover {
-  background-color: rgba(0, 0, 0, 0.02);
+  background-color: #efefef;
   cursor: pointer;
+  border-left-style: dashed;
+
+  transform: scale(1.05);
 }
 
 .line {
@@ -198,6 +202,7 @@ section {
   border-color: #aaa;
   background: rgba(0, 0, 0, 0.02);
   height: 100%;
+  margin-top: 30px;
   margin-left: 0px !important;
 }
 
