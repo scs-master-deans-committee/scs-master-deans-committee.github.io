@@ -4,6 +4,21 @@ body {
   font-family: "Quicksand", Arial, sans-serif;
 }
 
+::-webkit-selection {
+  color: #fff;
+  background: #cc002b;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: #cc002b;
+}
+
+::selection {
+  color: #fff;
+  background: #cc002b;
+}
+
 aside {
   height: 100%;
   width: 20%;
@@ -22,6 +37,29 @@ aside {
   align-content: flex-start;
 }
 
+nav ul li {
+  color: rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  position: relative;
+  padding: 10px 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  margin: 0 0 10px 0;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+nav ul li:hover {
+  cursor: pointer;
+  color: #000;
+  text-decoration: underline;
+}
+
 .bottom-items ul li {
   padding: 0;
   margin: 0;
@@ -37,16 +75,6 @@ aside {
 
   vertical-align: bottom;
   text-align: right;
-}
-
-aside ul li {
-  margin: 0 0 10px 0;
-  padding: 0;
-  list-style: none;
-  font-size: 12px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
 aside ul li a {

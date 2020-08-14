@@ -1,3 +1,8 @@
+/*
+ *	Author: Anant Kaushik | MSE-SS | CMU
+ *  Copyright (c) 2020 CMU
+ */
+
 $(() => {
   setupMinutes(minutes);
 });
