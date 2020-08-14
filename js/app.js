@@ -99,5 +99,9 @@ const setupMinutes = (json) => {
     toggleMeetingsDetails(false);
   });
 
+  $("#nav-minutes").click(() => {
+    toggleMeetingsDetails(false);
+  });
+
   $(".calender-date-item").click((event) => handleShowMinutes(event, json));
 };
