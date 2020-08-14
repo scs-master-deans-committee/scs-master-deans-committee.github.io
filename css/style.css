@@ -190,6 +190,7 @@ section {
 }
 
 .meeting-detailed {
+  position: relative;
   border-top-style: dashed;
   border-left-style: dashed;
   border-right-style: dashed;
@@ -200,9 +201,18 @@ section {
   margin-left: 0px !important;
 }
 
+.details-row {
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
 .meeting-detailed .close {
-  margin-top: 14px;
+  position: absolute;
+  margin-top: 10px;
+  margin-right: 10px;
   padding: 10px;
+  right: 0px;
+  z-index: 999;
 }
 
 .meeting-detailed .close:hover {
