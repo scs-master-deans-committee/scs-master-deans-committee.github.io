@@ -72,7 +72,8 @@ section {
 }
 
 .section-title {
-  padding: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
@@ -83,6 +84,10 @@ section {
 #minutes {
   display: flex;
   flex-direction: column;
+}
+
+.calendar {
+  display: none !important;
 }
 
 .horizontal-scrollable {
@@ -131,5 +136,72 @@ section {
   padding-top: 20px;
   padding-bottom: 20px;
   width: 90px;
-  margin-bottom: 20px;
+}
+
+.calender-date-item .month {
+  margin-top: 20px;
+}
+
+.meeting-detailed {
+  margin: 0px !important;
+}
+
+.meeting-date .date {
+  font-size: 30px;
+  background: rgba(0, 0, 0, 0.03);
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 70px;
+  text-align: center;
+}
+
+.meeting-detailed .meeting-date .month {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  padding: 18px;
+}
+
+.meeting-detailed .meeting-date .line {
+  background-position: left;
+  height: 20px;
+  margin-top: 12px;
+  margin-left: 20px;
+  margin-bottom: 12px;
+}
+
+.meeting-detailed .notes {
+}
+
+.meeting-detailed .notes ul {
+  padding-inline-start: 35px;
+}
+
+.meeting-detailed .notes ul {
+  list-style-type: none;
+}
+
+.meeting-detailed .notes ul li {
+  text-indent: -1.4em;
+  line-height: 1.8em;
+}
+
+.meeting-detailed .notes li::before {
+  content: "\e114";
+  font-family: "icomoon";
+  float: left;
+  width: 1.4em;
+  margin-right: 12px;
+}
+
+.meeting-detailed .note-type {
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 18px;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 16px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
