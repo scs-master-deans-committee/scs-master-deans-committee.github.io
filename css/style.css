@@ -87,7 +87,6 @@ section {
 }
 
 .calendar {
-  display: none !important;
 }
 
 .horizontal-scrollable {
@@ -142,8 +141,25 @@ section {
   margin-top: 20px;
 }
 
-.meeting-detailed {
-  margin: 0px !important;
+.hidden {
+  display: none !important;
+}
+
+.meeting-detailed .close {
+  margin-top: 6px;
+  margin-right: 90px;
+  padding: 10px;
+}
+
+.meeting-detailed .close:hover {
+  background: rgba(0, 0, 0, 0.03);
+  cursor: pointer;
+}
+
+.meeting-date {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .meeting-date .date {
@@ -152,16 +168,24 @@ section {
   padding-top: 16px;
   padding-bottom: 16px;
   width: 70px;
-  text-align: center;
 }
 
 .meeting-detailed .meeting-date .month {
-  text-align: center;
   display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 24px;
-  padding: 18px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 18px;
+  margin-right: 4px;
+}
+
+.meeting-detailed .meeting-date .year {
+  display: flex;
+  font-size: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 4px;
+  margin-right: 4px;
 }
 
 .meeting-detailed .meeting-date .line {
