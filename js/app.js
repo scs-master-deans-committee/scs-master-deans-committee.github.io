@@ -17,9 +17,12 @@ const toggleMeetingsDetails = (val = true) => {
   }
 };
 
-const createCalenderDiv = (meetingDate, key) => {
+const createCalenderDiv = (meetingDate, key, type) => {
+  let deanTag =
+    type === "dean" ? `<div class="type"><small>w/</small>Dean</div>` : "";
   return `<div class="calender-date-item" data-id="${key}">
             <div class="date">${meetingDate.date}</div>
+            ${deanTag}
             <div class="month">${meetingDate.month}</div>
             <div class="line"></div>
         </div>`;
@@ -37,7 +40,7 @@ const handleShowMinutes = (event, json) => {
   $("#md-month").html(meetingDate.month);
   $("#md-year").html(meetingDate.year);
 
-  setupMinutesDetails(minutes["minutes"]);
+  setupMinutesDetails(minutes["minutes"], minutes["type"]);
   toggleMeetingsDetails(true);
 };
 
@@ -62,9 +65,14 @@ const convertNotesJsonToHtml = (json) => {
   return notes;
 };
 
-const setupMinutesDetails = (minutes) => {
+const setupMinutesDetails = (minutes, type) => {
   // Initialise
   $("#md-notes").html(`<ul id="md-notes-main"></ul>`);
+  $("#md-type").addClass("hidden");
+
+  if (type == "dean") {
+    $("#md-type").removeClass("hidden");
+  }
 
   $("#md-notes-main").html(convertNotesJsonToHtml(minutes["main"]));
 
@@ -88,7 +96,11 @@ const setupMinutesDetails = (minutes) => {
 const setupMinutes = (json) => {
   let calenderDivs = "";
   json.forEach((minutes, key) => {
-    calenderDivs += createCalenderDiv(minutes["meeting-date"], key);
+    calenderDivs += createCalenderDiv(
+      minutes["meeting-date"],
+      key,
+      minutes["type"]
+    );
   });
 
   // Add calender values
