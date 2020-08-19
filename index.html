@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <head>
   <meta charset="utf-8" />
   <link
@@ -12,7 +11,7 @@
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
     crossorigin="anonymous"
   />
-  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/common-style.css" rel="stylesheet" />
   <link href="css/icon.css" rel="stylesheet" />
 </head>
 <body>
@@ -28,9 +27,9 @@
           <br />
           <li id="nav-minutes" class="active">Minutes</li>
           <br />
-          <li>Constitution</li>
+          <li><a href="constitution/index.html">Constitution</a></li>
           <br />
-          <li>Members</li>
+          <li><a href="members/index.html">Members</a></li>
           <br />
         </ul>
       </nav>
@@ -71,7 +70,10 @@
     <section id="minutes">
       <div class="section-title">Meeting Minutes</div>
       <div id="meetings-calendar" class="calendar horizontal-scrollable"></div>
-      <div id="meeting-detailed" class="container meeting-detailed hidden">
+      <div
+        id="meeting-detailed"
+        class="container left-container meeting-detailed hidden"
+      >
         <div class="row details-row">
           <div id="meeting-detailed-close" class="close">
             <i class="icon-cross2"></i>
