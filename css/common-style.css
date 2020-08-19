@@ -19,11 +19,44 @@ body {
   background: #cc002b;
 }
 
+ol {
+  padding-inline-start: 35px;
+}
+
+ol li {
+  line-height: 1.8em;
+  padding-left: 0.6em;
+}
+
+ol li::before {
+  float: left;
+  width: 1.4em;
+  margin-right: 12px;
+}
+
+ul.plus {
+  list-style-type: none;
+  padding-inline-start: 35px;
+}
+
+ul.plus li {
+  text-indent: -2em;
+  line-height: 1.8em;
+  padding-left: 0.6em;
+}
+
+ul.plus li::before {
+  content: "\e114";
+  font-family: "icomoon";
+  float: left;
+  width: 1.4em;
+  margin-right: 12px;
+}
+
 aside {
   height: 100%;
   width: 20%;
   padding: 50px;
-
   position: fixed;
   text-align: right;
   display: flex;
@@ -64,6 +97,11 @@ nav ul li:hover {
   cursor: pointer;
   color: #000;
   border-bottom: 1px solid #000;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: #000;
 }
 
 .bottom-items ul li {
@@ -119,6 +157,10 @@ section {
   text-transform: uppercase;
   letter-spacing: 5px;
   line-height: 1.8;
+}
+
+.left-container {
+  margin-left: 0px !important;
 }
 
 #minutes {
@@ -217,7 +259,6 @@ section {
   border-color: #aaa;
   background: rgba(0, 0, 0, 0.02);
   margin-top: 30px;
-  margin-left: 0px !important;
 }
 
 .details-row {
@@ -292,29 +333,7 @@ section {
 }
 
 .meeting-detailed .notes {
-  padding-bottom: 100px;
-}
-
-.meeting-detailed .notes ul {
-  padding-inline-start: 35px;
-}
-
-.meeting-detailed .notes ul {
-  list-style-type: none;
-}
-
-.meeting-detailed .notes ul li {
-  text-indent: -2em;
-  line-height: 1.8em;
-  padding-left: 0.6em;
-}
-
-.meeting-detailed .notes li::before {
-  content: "\e114";
-  font-family: "icomoon";
-  float: left;
-  width: 1.4em;
-  margin-right: 12px;
+  padding-bottom: 50px;
 }
 
 .meeting-detailed .note-type {

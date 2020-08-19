@@ -54,7 +54,7 @@ const convertNotesJsonToHtml = (json) => {
   } else if (typeof json === "object") {
     for (const key in json) {
       notes += `<li>${key}</li>`;
-      notes += `<ul>`;
+      notes += `<ul class="plus">`;
       notes += convertNotesJsonToHtml(json[key]);
       notes += `</ul>`;
     }
@@ -67,7 +67,7 @@ const convertNotesJsonToHtml = (json) => {
 
 const setupMinutesDetails = (minutes, type) => {
   // Initialise
-  $("#md-notes").html(`<ul id="md-notes-main"></ul>`);
+  $("#md-notes").html(`<ul class="plus" id="md-notes-main"></ul>`);
   $("#md-type").addClass("hidden");
 
   if (type == "dean") {
@@ -85,7 +85,7 @@ const setupMinutesDetails = (minutes, type) => {
     restOfTheNotes += `<div class="note-type">${key}</div>`;
 
     // notes
-    restOfTheNotes += `<ul>`;
+    restOfTheNotes += `<ul class="plus">`;
     restOfTheNotes += convertNotesJsonToHtml(minutes[key]);
     restOfTheNotes += `</ul>`;
   }
