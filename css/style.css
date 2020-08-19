@@ -292,6 +292,7 @@ section {
 }
 
 .meeting-detailed .notes {
+  padding-bottom: 100px;
 }
 
 .meeting-detailed .notes ul {
