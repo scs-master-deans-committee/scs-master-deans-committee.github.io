@@ -18,8 +18,7 @@ const toggleMeetingsDetails = (val = true) => {
 };
 
 const createCalenderDiv = (meetingDate, key, type) => {
-  let deanTag =
-    type === "dean" ? `<div class="type"><small>w/</small>Dean</div>` : "";
+  let deanTag = type ? `<div class="type">${type}</div>` : "";
   return `<div class="calender-date-item" data-id="${key}">
             <div class="date">${meetingDate.date}</div>
             ${deanTag}
@@ -70,8 +69,9 @@ const setupMinutesDetails = (minutes, type) => {
   $("#md-notes").html(`<ul class="plus" id="md-notes-main"></ul>`);
   $("#md-type").addClass("hidden");
 
-  if (type == "dean") {
+  if (type) {
     $("#md-type").removeClass("hidden");
+    $("#md-type").html(type);
   }
 
   $("#md-notes-main").html(convertNotesJsonToHtml(minutes["main"]));

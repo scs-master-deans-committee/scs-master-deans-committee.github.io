@@ -1,6 +1,116 @@
 minutes = [
   {
     "meeting-date": {
+      date: "1",
+      month: "July",
+      year: "2020",
+    },
+    type: "w/CPDC",
+    minutes: {
+      main: [
+        {
+          "Links to pages concerning TOC (combined w/ Encompass this year)": [
+            "CMU Page: https://www.cmu.edu/career/employers/encompass-cmu.html",
+            "Linkedin group: https://www.linkedin.com/groups/13878053",
+          ],
+        },
+        {
+          "TOC is planning to use CareerECO as a platform for examining recruiter booths and also has video interviewing.": [
+            "Has the ability for each student to create their own bio.",
+            "Virtual queueing in line exists on this platform (can go into at most 2 queues at a time) - Student is taken to a 1 on 1 video chat when selected from the queue, similar to in person TOC.",
+            "Bio is shown just like in an in-person fair.",
+          ],
+        },
+        "Supplementary to the TOC, workshops will be doen bty the CPDC this summer/fall concerning offer acceptance/job searching.",
+      ],
+      "Questions (Answered by CPDC staff)": [
+        {
+          "How does virtual career fair deal with different time zones?": [
+            "Scheduled from 1-9pm ET for all 3 days to have coverage of multiple time zones",
+            "In August, CPDPC will release guidance information on how for students to use the platform in the form of workshops.",
+          ],
+        },
+        {
+          "How are the virtual booths organized?": [
+            "Employers register in handshake.",
+            "List of organizations available at TOC are listed ahead of time.",
+            "Students can more easily account for the waiting times - in the virtual career fair, there is an expected time frame.",
+            "Virtual career fair allows for more people to be present at “booths” to talk with people, due to easier accessibility of online communication and the lack of physical space constraints.",
+          ],
+        },
+        {
+          "How will on campus interviews be done?": [
+            "Still working out whether fully virtually or done on all campus",
+            "Companies will have virtual options.",
+            "Information is shown in handshake w.r.t. whether companies have on campus interviews or not.",
+          ],
+        },
+        {
+          "Is there no reason there is an SCS career fair?": [
+            "There aren’t any one college specific career fairs on CMU campus.",
+            "Hard for employers to come multiple times to campus.",
+            "A lot of companies hire cross-functionally.",
+            "Workshops/tech talks are more effective.",
+          ],
+        },
+        {
+          "If the virtual career fair goes well, could we have virtual career fairs in the future?": [
+            "A lot of success/failure is at the whim of recruiter conditions.",
+            "In person interviews may still be done in person, but the main TOC fair could be done virtually.",
+            {
+              "Alternative ways of networking involve the following:": [
+                "Contact CMU alumni.",
+                "Attending the other events i.e. tech talks.",
+                "Ask questions when talking with recruiters!",
+              ],
+            },
+          ],
+        },
+        {
+          "Are there any companies with separate career fairs in TOC?": [
+            "This is up to the company’s preference.",
+            "Companies (e.g. Apple) that hire cross-functionally and are popular, may have separate workshops, and may be more effective for them to hire from workshops.",
+          ],
+        },
+        {
+          "How will employers communicate new H1-B status/more complicated remote situations for working?": [
+            "Companies will be self-selecting with respect to H1-B students.",
+            "Applied study/remote internships would be available (but need to make it to campus by one semester).",
+            "Company booths will indicate whether they are sponsoring or not (and on Handshake).",
+            "Situations will be on a program by program basis for international students",
+            "Talk to OIE",
+            "Talk directly with the employer relations at CPDC for specifics of employment status/eligibility. ",
+          ],
+        },
+        {
+          "What is the situation with the previously in-person tech talks?": [
+            "No direct ruling for on-campus tech talks. Most likely will be zoom.",
+          ],
+        },
+        {
+          "Will there be something akin to Let’s Talk (career event for SCS/ECE undergrads that occurs the weekend before TOC) for graduate students?": [
+            "No Let’s Talk for master’s students but the CPDPC will communicate with companies on whether they would be interested in such an event.",
+            "Sometimes companies do have company/field specific events before the TOC.",
+          ],
+        },
+
+        {
+          "What about an overview of the recruiting pipeline for a company?": [
+            "Companies have quickly shifting recruiting pipelines - they may be different across different fields/different years.",
+            "Companies also might not want to reveal much about what they want to do for recruiting.",
+          ],
+        },
+        {
+          "Biggest changes to recruiting due to covid?": [
+            "Unable to go to offices/meeting people at the company.",
+            "Some companies now have hiring changes based on covid.",
+          ],
+        },
+      ],
+    },
+  },
+  {
+    "meeting-date": {
       date: "27",
       month: "Jun",
       year: "2020",
@@ -25,7 +135,7 @@ minutes = [
       month: "Jun",
       year: "2020",
     },
-    type: "dean",
+    type: "w/Dean",
     minutes: {
       main: [],
       "Black Lives Matter | Daniel": [
@@ -252,7 +362,7 @@ minutes = [
       month: "May",
       year: "2020",
     },
-    type: "dean",
+    type: "w/Dean",
     minutes: {
       Opportunities: [
         {
