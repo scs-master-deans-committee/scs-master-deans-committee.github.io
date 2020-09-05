@@ -30,3 +30,6 @@ The [Master's Advisory Committee to the Dean of SCS](https://scsdean.cs.cmu.edu/
 - [Danny Vedova](mailto:dkv@cs.cmu.edu): Ad Hoc Committee Manager (RI: MSR)
 - [Neil Xu](mailto:ziyux@cs.cmu.edu): Member (MLD: MSML)
 - [Lijun Yu](mailto:lijun@cmu.edu): Secretary (LTI: MLT)
+- David Bayani: Member
+- [Sayan Chaudhry](mailto:sayanc@andrew.cmu.edu): Apprentice
+- [Peter Wu](mailto:peterw1@andrew.cmu.edu): Apprentice
