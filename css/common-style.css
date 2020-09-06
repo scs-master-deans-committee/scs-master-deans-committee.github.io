@@ -162,3 +162,35 @@ section {
 .left-container {
   margin-left: 0px !important;
 }
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.03);
+  padding: 50px;
+}
+
+.footer .title {
+  font-size: 24px;
+}
+
+.footer .contact {
+  margin-top: 30px !important;
+  padding: 12px;
+  border-radius: 0%;
+  border-style: dashed !important;
+  color: #000;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.footer .contact:hover {
+  transform: scale(1.05);
+  border-color: #cc002b;
+  color: #cc002b;
+}
+
+a {
+  color: #cc002b;
+}
+
+a:hover {
+  color: #cc002b;
+}

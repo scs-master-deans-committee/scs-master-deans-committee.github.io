@@ -24,17 +24,15 @@
       />
       <nav>
         <ul>
-          <li><a href="../about/index.html"> About</a></li>
+          <li><a href="../about/index.html">About </a></li>
           <br />
-          <li id="nav-minutes" class="active">Minutes</li>
+          <li><a href="../minutes/index.html">Minutes</a></li>
           <br />
           <li><a href="../constitution/index.html">Constitution</a></li>
           <br />
           <li><a href="../members/index.html">Members</a></li>
           <br />
-          <li>
-            <a href="../contact/index.html"> Suggestions </a>
-          </li>
+          <li id="nav-contact" class="active">Suggestions</li>
           <br />
         </ul>
       </nav>
@@ -72,30 +70,14 @@
   </aside>
 
   <div class="main">
-    <section id="minutes">
-      <div class="section-title">Meeting Minutes</div>
-      <div id="meetings-calendar" class="calendar horizontal-scrollable"></div>
-      <div
-        id="meeting-detailed"
-        class="container left-container meeting-detailed hidden"
+    <section id="contact">
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLScnGy_3KwyuP2UB4GfG7pYlTV9XG-MIF4GeAKfihCbUVn91Rg/viewform?embedded=true"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        >Loading…</iframe
       >
-        <div class="row details-row">
-          <div id="meeting-detailed-close" class="close">
-            <i class="icon-cross2"></i>
-          </div>
-          <div class="col-lg-12 meeting-date">
-            <div class="row">
-              <div id="md-date" class="date">21</div>
-              <div id="md-month" class="month">Aug</div>
-              <div id="md-year" class="year">2020</div>
-            </div>
-            <div id="md-type" class="md-type"><small>w/</small>Dean</div>
-            <div class="line"></div>
-          </div>
-
-          <div id="md-notes" class="col-lg-12 notes"></div>
-        </div>
-      </div>
     </section>
   </div>
 
@@ -114,6 +96,4 @@
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"
   ></script>
-  <script type="text/javascript" src="../data/minutes.js"></script>
-  <script src="js/app.js"></script>
 </body>
