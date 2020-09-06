@@ -2,7 +2,7 @@ minutes = [
   {
     "meeting-date": {
       date: "1",
-      month: "July",
+      month: "Jul",
       year: "2020",
     },
     type: "w/CPDC",
