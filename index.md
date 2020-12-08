@@ -23,13 +23,22 @@ The [Master's Advisory Committee to the Dean of SCS](https://scsdean.cs.cmu.edu/
 
 # Committee Members
 
+## Current Members
+
 - [Romel Baral](mailto:rbaral@andrew.cmu.edu): Member (CB: MSCB)
+- [Connie Chau](mailto:cchau1@andrew.cmu.edu): DEI Associate Dean Search Representative (HCI: MHCI)
 - [Anant Kaushik](mailto:anantk@andrew.cmu.edu): Member (ISR: MSE-SS)
 - [Noelle Toong](mailto:ntoong@andrew.cmu.edu): Member (CB: MSAS)
 - [Kiran Prasad](mailto:Kiranpra@cs.cmu.edu): Liason (LTI: MSAII)
 - [Danny Vedova](mailto:dkv@cs.cmu.edu): Ad Hoc Committee Manager (RI: MSR)
 - [Neil Xu](mailto:ziyux@cs.cmu.edu): Member (MLD: MSML)
 - [Lijun Yu](mailto:lijun@cmu.edu): Secretary (LTI: MLT)
-- David Bayani: Member (Prefer not to say)
-- [Sayan Chaudhry](mailto:sayanc@andrew.cmu.edu): Apprentice (CSD: MSCS)
-- [Peter Wu](mailto:peterw1@andrew.cmu.edu): Apprentice (MLD: MSML)
+
+## Apprentices
+
+- [Sayan Chaudhry](mailto:sayanc@andrew.cmu.edu) (CSD: MSCS)
+- [Peter Wu](mailto:peterw1@andrew.cmu.edu) (MLD: MSML)
+
+## Graduated Members
+
+- David Bayani
