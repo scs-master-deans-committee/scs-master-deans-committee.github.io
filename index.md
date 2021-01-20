@@ -40,9 +40,10 @@ The [Master's Advisory Committee to the Dean of SCS](https://scsdean.cs.cmu.edu/
 - [Marta Mendez](mailto:mmendezs@cs.cmu.edu) (LTI: MSAII)
 - [Chaitanya Srinivasan](mailto:csriniv1@cs.cmu.edu) (CB: MSAS)
 
-### Graduated Members
+### Alumni
 
 - David Bayani
 - Connie Chau
+- Sayan Chaudhry
 - Anant Kaushik
 - Neil Xu
