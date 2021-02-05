@@ -47,3 +47,8 @@ The [Master's Advisory Committee to the Dean of SCS](https://scsdean.cs.cmu.edu/
 - Sayan Chaudhry
 - Anant Kaushik
 - Neil Xu
+
+### Resources
+
+- [CMU Course on Practical Ideas in CS](https://www.cs.cmu.edu/~07131/f20/)
+- [CMU SCS Alumni Network](https://cmu.firsthand.co/)
