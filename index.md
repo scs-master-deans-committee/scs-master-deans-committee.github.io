@@ -39,6 +39,7 @@ The [Master's Advisory Committee to the Dean of SCS](https://scsdean.cs.cmu.edu/
 - [Xinyu Lin](mailto:xinyulin@cs.cmu.edu) (HCI: MHCI)
 - [Marta Mendez](mailto:mmendezs@cs.cmu.edu) (LTI: MSAII)
 - [Chaitanya Srinivasan](mailto:csriniv1@cs.cmu.edu) (CB: MSAS)
+- [Indra Tjhai](mailto:itjhai@andrew.cmu.edu) (TEP: MSPM)
 
 ### Graduated Members
 
