@@ -14,6 +14,7 @@
   <link href="../css/common-style.css" rel="stylesheet" />
   <link href="../css/icon.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
+  <title>Meeting Minutes</title>
 </head>
 <body>
   <aside>
@@ -76,26 +77,115 @@
   <div class="main">
     <section id="minutes">
       <div class="section-title">Meeting Minutes</div>
-      <div id="meetings-calendar" class="calendar horizontal-scrollable"></div>
-      <div
-        id="meeting-detailed"
-        class="container left-container meeting-detailed hidden"
-      >
-        <div class="row details-row">
-          <div id="meeting-detailed-close" class="close">
-            <i class="icon-cross2"></i>
-          </div>
-          <div class="col-lg-12 meeting-date">
-            <div class="row">
-              <div id="md-date" class="date">21</div>
-              <div id="md-month" class="month">Aug</div>
-              <div id="md-year" class="year">2020</div>
+        <div class="panel-group" id="role-accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel" v-for="(months, year) in tree">
+            <div class="panel-heading border-br-3rem" role="tab" :id="'heading-role-year-' + year">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#role-accordion" :href="'#collapse-role-year-' + year" aria-expanded="true" aria-controls="'collapse-role-year-' + year">
+                    <span class="caret caret-mr"></span> <span v-text="year"></span>
+                  </a>
+                </h4>
             </div>
-            <div id="md-type" class="md-type"><small>w/</small>Dean</div>
-            <div class="line"></div>
+            <div :id="'collapse-role-year-' + year" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-role-1">
+                <div class="panel-body">
+                  <div class="panel-group" id="sub-role-1-accordion" role="tablist" aria-multiselectable="true">
+                      <div class="panel" v-for="(dates, month) in months">
+                        <div class="panel-heading border-br-3rem" role="tab" id="heading-sub-role-1">
+                            <h4 class="panel-title">
+                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#sub-role-1-accordion" :href="`#collapse-role-year-${year}-month-${month}`" aria-expanded="true" aria-controls="collapse-sub-role-1">
+                                <span class="caret"></span> <span v-text="month"></span>
+                              </a>
+                            </h4>
+                        </div>
+                        <div :id="`collapse-role-year-${year}-month-${month}`" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-sub-role-1">
+                          <div class="panel-body">
+                            <div class="panel-group" id="sub-role-1_sub-role-1-accordion" role="tablist" aria-multiselectable="true">
+                              <div class="panel" v-for="(note, date) in dates">
+                                <div class="panel-heading border-br-3rem" role="tab" id="heading-sub-role-1_sub-role-1">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#sub-role-1_sub-role-1-accordion" :href="`#collapse-role-year-${year}-month-${month}-date-${date}`" aria-expanded="true" aria-controls="collapse-sub-role-1_sub-role-1">
+                                      <span class="caret"></span> <span v-text="date"></span>
+                                      <div class="action pull-right">
+                                        <span class="badge badge-secondary" v-if="note.type">{{ note.type }}</span>
+                                      </div>
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div :id="`collapse-role-year-${year}-month-${month}-date-${date}`" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-sub-role-1_sub-role-1">
+                                  <div class="panel-body" v-html="noteHtml(note)">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
           </div>
-
-          <div id="md-notes" class="col-lg-12 notes"></div>
+      </div>
+      <div id="minute-template" style="display:none;">
+        <div id="md-notes" class="col-lg-12 notes">
+          <ul class="plus" id="md-notes-main"></ul>
+          <div class="note-type">Opportunities</div>
+          <ul class="plus">
+            <li>LTI (Alexandra Balobeshinka helming) has created a spreadsheet for internship opportunities in light of the
+              Covid-19 situation. We think that this would be a fantastic resource for students (especially master's) even
+              in normal times for both internships and full time. We think that there may be value in having this as a SCS
+              wide initiative since there are many cross-disciplinary opportunities. Additionally, having the SCS resume
+              book during normal times would be quite helpful in our opinion.</li>
+            <ul class="plus">
+              <li>They'll look into this further, generally from Alumni</li>
+            </ul>
+          </ul>
+          <div class="note-type">Registration</div>
+          <ul class="plus">
+            <li>Registration is a crucial process for every student, but especially so for master's students who have a
+              compressed time at CMU. Master's students are also in the unique position of taking classes that often have
+              either advanced seniors or PhDs in them. Since the registration day for master's students is one day later
+              than for senior undergraduates and PhDs, for many classes, they get cut out. We believe that this is unfair
+              and that all students who are in their last semester (or year) should register at the same time. I believe
+              this issue has plagued nearly every master's student who has attended CMU and likely is one of the single
+              biggest changes CMU can make to improve the educational experience of master's students.</li>
+            <ul class="plus">
+              <li>They'll look into this both via new sections and by prioritizing via time to graduation</li>
+            </ul>
+          </ul>
+          <div class="note-type">Space</div>
+          <ul class="plus">
+            <li>Space affects everyone in SCS. Today, RI students received an email indicating that a highly utilized lounge
+              on the 4th floor of NSH is being converted into lab space for incoming faculty. No one has any problems with
+              making space for new faculty, but there is no concrete guarantee or plan to get that space back. In
+              particular this negatively impacts coursework masters students (MRSD, MSCV) who do not have the luxury of
+              having a desk at the lab. What plans does SCS have to get departments more space? (We have heard rumors of a
+              new building for RI - what stops the execution of obtaining a new building?)</li>
+            <ul class="plus">
+              <li>New building doesn't seem to be anytime soon. Will try to consolidate space and acquire new space near
+                campus</li>
+            </ul>
+          </ul>
+          <div class="note-type">Resources</div>
+          <ul class="plus">
+            <li>We think that SCS master's students would greatly appreciate access to computing resources (such as AWS
+              credits). Much of the work that students need to do requires computational resources far beyond what most
+              have access to normally. Additionally, a budget like this would allow students to work on personal projects
+              which only enhance student capability and lead to new innovations, thereby increasing the already impressive
+              clout of CMU CS. These resources would be even more helpful given the reduced capacity of CMU's on-campus
+              resources at the moment.</li>
+            <ul class="plus">
+              <li>They will Look into aws credits for student projects as an educational experience</li>
+            </ul>
+          </ul>
+          <div class="note-type">Housing</div>
+          <ul class="plus">
+            <li>Many students are facing uncertainty when it comes to housing for the Fall semester as they are unable to
+              see housing before signing leases for the fall. If there are any resources or help you could provide to
+              these students, it would be greatly appreciated. </li>
+            <ul class="plus">
+              <li>Inventory resources currently available</li>
+              <li>They will look into negotiations with certain players</li>
+            </ul>
+          </ul>
         </div>
       </div>
     </section>
@@ -116,6 +206,7 @@
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"
   ></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
   <script type="text/javascript" src="../data/minutes.js"></script>
   <script src="js/app.js"></script>
 </body>
