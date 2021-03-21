@@ -3,46 +3,6 @@
  *  Copyright (c) 2020 CMU
  */
 
-$(() => {
-  setupMinutes(minutes);
-});
-
-const toggleMeetingsDetails = (val = true) => {
-  if (val) {
-    $("#meetings-calendar").addClass("hidden");
-    $("#meeting-detailed").removeClass("hidden");
-  } else {
-    $("#meetings-calendar").removeClass("hidden");
-    $("#meeting-detailed").addClass("hidden");
-  }
-};
-
-const createCalenderDiv = (meetingDate, key, type) => {
-  let deanTag = type ? `<div class="type">${type}</div>` : "";
-  return `<div class="calender-date-item" data-id="${key}">
-            <div class="date">${meetingDate.date}</div>
-            ${deanTag}
-            <div class="month">${meetingDate.month}</div>
-            <div class="line"></div>
-        </div>`;
-};
-
-const handleShowMinutes = (event, json) => {
-  let target = $(event.currentTarget);
-  let id = target.data("id");
-  let minutes = json[id];
-
-  // Setup date
-  let meetingDate = minutes["meeting-date"];
-
-  $("#md-date").html(meetingDate.date);
-  $("#md-month").html(meetingDate.month);
-  $("#md-year").html(meetingDate.year);
-
-  setupMinutesDetails(minutes["minutes"], minutes["type"]);
-  toggleMeetingsDetails(true);
-};
-
 const convertNotesJsonToHtml = (json) => {
   let notes = "";
 
@@ -64,17 +24,12 @@ const convertNotesJsonToHtml = (json) => {
   return notes;
 };
 
-const setupMinutesDetails = (minutes, type) => {
+const noteHtml = (data) => {
+  const { minutes } = data;
+
   // Initialise
-  $("#md-notes").html(`<ul class="plus" id="md-notes-main"></ul>`);
-  $("#md-type").addClass("hidden");
-
-  if (type) {
-    $("#md-type").removeClass("hidden");
-    $("#md-type").html(type);
-  }
-
-  $("#md-notes-main").html(convertNotesJsonToHtml(minutes["main"]));
+  var note = $(`<div class="meeting-detailed"><ul class="md-notes-main"></ul></div>`);
+  note.find(".md-notes-main").html(convertNotesJsonToHtml(minutes["main"]));
 
   let restOfTheNotes = [];
 
@@ -90,30 +45,30 @@ const setupMinutesDetails = (minutes, type) => {
     restOfTheNotes += `</ul>`;
   }
 
-  $("#md-notes").append(restOfTheNotes);
+  note.append(restOfTheNotes);
+
+  return note.html();
 };
 
-const setupMinutes = (json) => {
-  let calenderDivs = "";
-  json.forEach((minutes, key) => {
-    calenderDivs += createCalenderDiv(
-      minutes["meeting-date"],
-      key,
-      minutes["type"]
-    );
-  });
+new Vue({
+  el: '#minutes',
+  data: {
+    tree: minutes.reduce((accum, current) => {
+      const { date = 'N/A', month = 'N/A', year = 'N/A' } = current['meeting-date'] || {};
 
-  // Add calender values
-  $("#meetings-calendar").html(calenderDivs);
+      accum[year] = accum[year] || {};
+      accum[year][month] = accum[year][month] || {};
+      accum[year][month][date] = current;
 
-  // Setup actions
-  $("#meeting-detailed-close").click(() => {
-    toggleMeetingsDetails(false);
-  });
-
-  $("#nav-minutes").click(() => {
-    toggleMeetingsDetails(false);
-  });
-
-  $(".calender-date-item").click((event) => handleShowMinutes(event, json));
-};
+      return accum;
+    }, {})
+  },
+  methods: {
+    noteHtml: noteHtml,
+  },
+  mounted: () => {
+    $('.panel-title a').on('click', function(){
+      $(this).toggleClass('dropup');
+    });
+  },
+});

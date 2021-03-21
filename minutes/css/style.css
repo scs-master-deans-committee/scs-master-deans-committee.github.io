@@ -3,180 +3,88 @@
   flex-direction: column;
 }
 
-.calendar {
+.md-notes-main {
+  padding-top: 15px;
 }
 
-.horizontal-scrollable {
-  height: 100%;
-  padding-top: 30px;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox; /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Chrome */
-  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
-}
-
-.calender-date-item {
-  border-top-style: dashed;
-  border-right-style: dashed;
-  border-width: 0.5px;
-  border-right-width: 0.5px;
-  color: black;
-  border-color: #aaa;
-  font-size: 24px;
-  padding: 30px;
-  margin: 0px;
-  height: 100%;
-  font-weight: 300;
-  text-align: center;
-  transition: transform 0.2s;
-}
-
-.calender-date-item:first-child {
-  border-left-style: dashed;
-}
-
-.calender-date-item:hover {
-  background-color: #efefef;
-  cursor: pointer;
-  border-left-style: dashed;
-  transform: scale(1.05);
-}
-
-.line {
-  margin-top: 20px;
-  background-image: linear-gradient(#000, #000);
-  background-size: 1px 100%;
-  background-repeat: no-repeat;
-  background-position: center center;
-  display: block;
-  height: 60px;
-}
-
-.calender-date-item .date {
-  font-size: 40px;
-  background: rgba(0, 0, 0, 0.03);
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: 90px;
-}
-
-.calender-date-item .type {
-  background: #000;
-  color: white;
-  font-weight: 500;
-  font-size: 15px;
-  padding-right: 10px;
-  padding-left: 10px;
-  width: auto;
-  margin-top: -20px;
-}
-
-.calender-date-item .month {
-  margin-top: 20px;
-}
-
-.hidden {
-  display: none !important;
-}
-
-.meeting-detailed {
-  flex-grow: 1;
-  position: relative;
-  border-top-style: dashed;
-  border-left-style: dashed;
-  border-right-style: dashed;
-  border-width: 0.5px;
-  border-color: #aaa;
-  background: rgba(0, 0, 0, 0.02);
-  margin-top: 30px;
-}
-
-.details-row {
-  margin-left: 6px;
-  margin-right: 6px;
-}
-
-.meeting-detailed .close {
-  position: absolute;
-  margin-top: 10px;
-  margin-right: 10px;
-  padding: 10px;
-  right: 0px;
-  z-index: 999;
-}
-
-.meeting-detailed .close:hover {
-  background: rgba(0, 0, 0, 0.02);
-  cursor: pointer;
-}
-
-.meeting-date {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-
-.meeting-date .date {
-  font-size: 30px;
-  background: rgba(0, 0, 0, 0.03);
-  padding-top: 16px;
-  padding-bottom: 16px;
-  width: 70px;
-}
-
-.meeting-detailed .meeting-date .month {
-  display: flex;
-  font-size: 24px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-left: 18px;
-  margin-right: 4px;
-}
-
-.meeting-detailed .meeting-date .year {
-  display: flex;
-  font-size: 24px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
-.meeting-detailed .md-type {
-  float: left;
-  background: #000;
-  color: white;
-  font-weight: 500;
-  min-width: 70px;
-  font-size: 14px;
-  padding-right: 7px;
-  padding-left: 7px;
-  margin-left: -15px;
-  margin-top: -17px;
-}
-
-.meeting-detailed .meeting-date .line {
-  background-position: left;
-  height: 20px;
-  margin-top: 12px;
-  margin-left: 20px;
-  margin-bottom: 12px;
-}
-
-.meeting-detailed .notes {
-  padding-bottom: 50px;
-}
-
-.meeting-detailed .note-type {
-  font-weight: 500;
+.note-type {
+  font-weight: bold;
   margin-top: 30px;
   margin-bottom: 18px;
   color: rgba(0, 0, 0, 0.7);
   font-size: 16px;
   letter-spacing: 3px;
   text-transform: uppercase;
+}
+
+#role-accordion {
+  margin-right: 40px;
+}
+
+.panel-group {
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.panel-group .panel-group {
+  border-top: 0 none;
+  border-right: 0 none;
+}
+
+.panel {
+  border-bottom: 1px solid #ccc;
+}
+
+.panel-heading {
+  background: #f5f5f5;
+}
+
+.panel-heading h4 {
+  margin: 0;
+}
+
+.panel-heading a {
+  text-decoration: none;
+  color: #212529;
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+
+.panel-heading .badge {
+  font-weight: normal;
+  font-size: 14px;
+  background: #cc002b;
+}
+
+.panel-heading .caret {
+  width: 20px;
+  display: inline-block;
+  color: #888;
+}
+
+.panel-heading .collapsed .caret::before {
+  content: "\2B9E";
+}
+
+.panel-heading .dropup .caret::before {
+  content: "\2B9F";
+}
+
+.panel-body {
+  border-top: 1px solid #ccc;
+  padding-left: 25px;
+  padding-bottom: 5px;
+}
+
+.pull-right {
+  float: right;
+}
+
+#accordion-item-template {
+  display: none;
 }
