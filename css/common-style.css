@@ -2,6 +2,7 @@ html,
 body {
   height: 100%;
   font-family: "Quicksand", Arial, sans-serif;
+  min-width: 1150px;
 }
 
 ::-webkit-selection {
@@ -56,12 +57,23 @@ ul.plus li::before {
 aside {
   height: 100%;
   width: 20%;
-  padding: 50px;
-  position: fixed;
+  max-height: 1000px;
+  padding: 50px 50px 50px 0;
   text-align: right;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  float: left;
+}
+
+@media (min-width: 1150px) {
+  aside {
+    position: fixed;
+  }
+}
+
+aside ul {
+  padding: 0;
 }
 
 .logo {
@@ -117,7 +129,9 @@ nav ul li a:hover {
 
 .committee-title {
   width: 100%;
+  max-width: 200px;
   line-height: 1.8em;
+  margin-left: auto;
   text-transform: uppercase;
   font-size: 18px;
   vertical-align: bottom;
@@ -146,7 +160,6 @@ aside ul li a {
 }
 
 section {
-  height: 100%;
   padding-top: 20px;
 }
 
