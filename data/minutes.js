@@ -1,6 +1,153 @@
 minutes = [
   {
     "meeting-date": {
+      date: "25",
+      month: "Feb",
+      year: "2021",
+    },
+    type: "w/CMU T&E",
+    minutes: {
+      main: [
+        "Alumni org that was founded to grow the community around tech and entrepreneurship",
+        "Founded in 2019",
+        "Trying to centralize different satellite locations",
+        "Working with Swartz Center and some alumni groups but want to retain independence",
+        "Trying to get more students involved too",
+        "Spending a lot of effort scaling out this year so unable to do a formal mentorship",
+        {
+          "But willing to do a group mentoring session if we take up the logistics effort on our end": [
+            "Types of students in group?",
+            "Forms and selection of alumni",
+            "How to avoid overcommitment problems (ie more alumni than students or students than alumni — dynamic group size?)",
+            "Frequency and Duration",
+            "Leverage slack for advertising ",
+            "Join here: https://airtable.com/shrzdHcSHTJbADFNl",
+            "Website: https://www.cmute.io/"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "meeting-date": {
+      date: "25",
+      month: "Feb",
+      year: "2021",
+    },
+    type: "w/MSPM Students",
+    minutes: {
+      main: [
+        "We can present at MSPM Orientation (reach out to Brad, Casey, or Kevin)",
+        "Collaboration event (coffee chat, speed dating etc)",
+        "Day in the life",
+        "Professional events?"
+      ],
+    },
+  },
+  {
+    "meeting-date": {
+      date: "22",
+      month: "Jan",
+      year: "2021",
+    },
+    type: "w/GSA",
+    minutes: {
+      main: [
+        {
+          "Kristen Allen, GSA VP for Campus Affairs": [
+            "GSA has no collaboration with any Dean’s SACs like us",
+            "GSA collects information from students through proposals from GSA reps, polling,committees, and town halls",
+            "GSA polled about Covid and international students, got 400 responses (5% of graduate students). A raffle was used to incentivize.",
+            "GSA hasn’t done one-on-one interviews. But they used a story form at the end of a survey or asking to leave your email if you’re willing to tell more.",
+            "GSA hosted town halls in almost every college in spring",
+            "GSA has a master’s student advocate position to help polling",
+            "Listening session: a place to gather students sharing their thoughts about life. GSA has records of 3 (LTI) + 29 students from SCS that will share with us.",
+            "We could collaborate with GSA on bulk emails and town halls. GSA reps could echo our emails and actively participate in our polls.",
+            "Email advertising: GSA emails are sent from peers (GSA reps), possibly use striking titles.",
+          ],
+        },
+      ],
+    },
+  },
+  {
+    "meeting-date": {
+      date: "17",
+      month: "Dec",
+      year: "2020",
+    },
+    type: "w/Dean",
+    minutes: {
+      main: [
+      ],
+      "Buddy System": [
+        {
+          "Kiran": [
+            "Difficult to connect to CMU community for first-year students",
+            {
+              "David Galan: Survey": [
+                "Social engagements going on well",
+                "Currently trying to collect best practices"
+              ],
+            },
+            "Got email from program coordinators, but nothing further",
+            "David Galan: is it a solid suggestion for Spring?",
+            "Suggest creating a pairing between new students and mentors and let organic communication flow"
+          ],
+        },
+      ],
+      "Vaccine Plan": [
+        {
+          "Lijun": [
+            "David Garlan: Did you get the testing email? -> Hard to commit to a schedule"
+          ],
+        },
+      ],
+      "Transfer Tax between Departments": [
+        {
+          "Lijun, Kiran": [
+            "Some programs/advisors may have poor incentive for students to register courses in other departments",
+            "Martial: this system is better than the previous one which prevents students from cross registering",
+            "Will be concerned about wide-spread practice of restrictions from programs/advisors, especially financially"
+          ],
+        },
+      ],
+      "Registration, Waitlist": [
+        {
+          "Kiran": [
+            "Students can see whether they can get in or waitlist",
+            "Waitlist controlled by instructor",
+            "David Gallan: Registrar going crazy, will try to bring up at the next meeting",
+            "Initial block allowed for registration (e.g. 15 out of 100 seats), reservation for programs where course is required"
+          ],
+        },
+      ],
+      "TA Wages": [
+        {
+          "Romel": [
+            "Issue brought up at town hall",
+            "Comparing with other universities",
+            "David Gallan: courses (RI) short of TAs trying to attract more by paying more; but concerns about disparity between programs",
+            "Will need more study and possibly increase the wage band",
+            "Free TA should not happen (excluding students doing to put on CV)",
+            "PhD have requirement of TAs, but other universities may use TA to support PhD financially",
+            "Generally we have enough TAs from PhD requirements and Master volunteers. But Masters graduate early, so sometimes it's hard to find TAs that have taken the course.",
+            "TA quality issue: maybe cannot find TA with correct background, regardless how much pay"
+          ],
+        },
+      ],
+      "FCE": [
+        {
+          "Neil": [
+            "FCEs are part of promotion requirements of professors",
+            "Discussions about whether a faculty’s teaching quality improves",
+            "University looking into other ways to evaluate course"
+          ],
+        },
+      ],
+    },
+  },
+  {
+    "meeting-date": {
       date: "1",
       month: "Jul",
       year: "2020",
