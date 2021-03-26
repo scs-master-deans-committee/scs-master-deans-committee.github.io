@@ -1,6 +1,8 @@
 iframe {
-  margin-top: 20px;
-  margin-bottom: 20px;
   height: 93%;
   width: 100%;
+}
+
+#contact {
+  height: 100%;
 }
