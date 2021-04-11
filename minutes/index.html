@@ -81,41 +81,41 @@
     <section id="minutes">
       <div class="section-title">Meeting Minutes</div>
         <div class="panel-group" id="role-accordion" role="tablist" aria-multiselectable="true">
-          <div class="panel" v-for="(months, year) in tree">
-            <div class="panel-heading border-br-3rem" role="tab" :id="'heading-role-year-' + year">
+          <div class="panel" v-for="yearData in tree">
+            <div class="panel-heading border-br-3rem" role="tab" :id="'heading-role-year-' + yearData.year">
                 <h4 class="panel-title">
-                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#role-accordion" :href="'#collapse-role-year-' + year" aria-expanded="true" aria-controls="'collapse-role-year-' + year">
-                    <span class="caret caret-mr"></span> <span v-text="year"></span>
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#role-accordion" :href="'#collapse-role-year-' + yearData.year" aria-expanded="true" aria-controls="'collapse-role-year-' + yearData.year">
+                    <span class="caret caret-mr"></span> <span v-text="yearData.year"></span>
                   </a>
                 </h4>
             </div>
-            <div :id="'collapse-role-year-' + year" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-role-1">
+            <div :id="'collapse-role-year-' + yearData.year" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-role-1">
                 <div class="panel-body">
                   <div class="panel-group" id="sub-role-1-accordion" role="tablist" aria-multiselectable="true">
-                      <div class="panel" v-for="(dates, month) in months">
+                      <div class="panel" v-for="monthData in yearData.months">
                         <div class="panel-heading border-br-3rem" role="tab" id="heading-sub-role-1">
                             <h4 class="panel-title">
-                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#sub-role-1-accordion" :href="`#collapse-role-year-${year}-month-${month}`" aria-expanded="true" aria-controls="collapse-sub-role-1">
-                                <span class="caret"></span> <span v-text="month"></span>
+                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#sub-role-1-accordion" :href="`#collapse-role-year-${yearData.year}-month-${monthData.month}`" aria-expanded="true" aria-controls="collapse-sub-role-1">
+                                <span class="caret"></span> <span v-text="monthData.month"></span>
                               </a>
                             </h4>
                         </div>
-                        <div :id="`collapse-role-year-${year}-month-${month}`" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-sub-role-1">
+                        <div :id="`collapse-role-year-${yearData.year}-month-${monthData.month}`" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-sub-role-1">
                           <div class="panel-body">
                             <div class="panel-group" id="sub-role-1_sub-role-1-accordion" role="tablist" aria-multiselectable="true">
-                              <div class="panel" v-for="(note, date) in dates">
+                              <div class="panel" v-for="(dateData, i) in monthData.dates">
                                 <div class="panel-heading border-br-3rem" role="tab" id="heading-sub-role-1_sub-role-1">
                                   <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#sub-role-1_sub-role-1-accordion" :href="`#collapse-role-year-${year}-month-${month}-date-${date}`" aria-expanded="true" aria-controls="collapse-sub-role-1_sub-role-1">
-                                      <span class="caret"></span> <span v-text="date"></span>
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#sub-role-1_sub-role-1-accordion" :href="`#collapse-role-year-${yearData.year}-month-${monthData.month}-date-${dateData.date}-${i}`" aria-expanded="true" aria-controls="collapse-sub-role-1_sub-role-1">
+                                      <span class="caret"></span> <span v-text="dateData.date"></span>
                                       <div class="action pull-right">
-                                        <span class="badge badge-secondary" v-if="note.type">{{ note.type }}</span>
+                                        <span class="badge badge-secondary" v-if="dateData.data.type">{{ dateData.data.type }}</span>
                                       </div>
                                     </a>
                                   </h4>
                                 </div>
-                                <div :id="`collapse-role-year-${year}-month-${month}-date-${date}`" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-sub-role-1_sub-role-1">
-                                  <div class="panel-body" v-html="noteHtml(note)">
+                                <div :id="`collapse-role-year-${yearData.year}-month-${monthData.month}-date-${dateData.date}-${i}`" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-sub-role-1_sub-role-1">
+                                  <div class="panel-body" v-html="noteHtml(dateData.data)">
                                   </div>
                                 </div>
                               </div>

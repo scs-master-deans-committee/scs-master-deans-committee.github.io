@@ -50,18 +50,38 @@ const noteHtml = (data) => {
   return note.html();
 };
 
+var tree = minutes.reduce((accum, current) => {
+  const { date = 'N/A', month = 'N/A', year = 'N/A' } = current['meeting-date'] || {};
+
+  accum[year] = accum[year] || {};
+  accum[year][month] = accum[year][month] || [];
+  accum[year][month].push(current);
+
+  return accum;
+}, {});
+
+var sortedTree = Object.entries(tree).map(([year, months]) => {
+  return {
+    year: year,
+    months: Object.entries(months).map(([month, dates]) => {
+      return {
+        month: month,
+        dates: dates.map((data) => {
+          return {
+            date: data['meeting-date'].date,
+            data: data
+          };
+        }).sort((a, b) => (a.date - b.date))
+      };
+    }),
+  };
+}).sort((a, b) => (b.year - a.year));
+
+
 new Vue({
   el: '#minutes',
   data: {
-    tree: minutes.reduce((accum, current) => {
-      const { date = 'N/A', month = 'N/A', year = 'N/A' } = current['meeting-date'] || {};
-
-      accum[year] = accum[year] || {};
-      accum[year][month] = accum[year][month] || {};
-      accum[year][month][date] = current;
-
-      return accum;
-    }, {})
+    tree: sortedTree
   },
   methods: {
     noteHtml: noteHtml,
