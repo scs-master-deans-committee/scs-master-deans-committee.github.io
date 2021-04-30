@@ -1,0 +1,9 @@
+<Limit GET>
+order deny,allow
+allow from all
+</Limit>
+
+AuthType Shibboleth
+ShibRequestSetting requireSession 1
+ShibRequestSetting redirectToSSL 443
+Require valid-user
