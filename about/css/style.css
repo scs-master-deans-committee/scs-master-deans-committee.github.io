@@ -108,3 +108,23 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
+
+.welcome-video {
+  margin-bottom: 40px;
+  display: flex;
+}
+
+.welcome-video__video {
+  flex: 0 0 535px;
+}
+
+.welcome-video__text {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  max-width: 500px;
+
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 1.3;
+}
